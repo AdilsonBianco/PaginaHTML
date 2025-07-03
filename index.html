@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adilson Roberto Bianco - Minha Página Pessoal</title>
+    <style>
+        body {
+            background-color: #f0f8ff; 
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #4682b4; 
+            text-align: center; 
+        }
+
+        p {
+            font-size: 1.2em;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 15px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            width: 400px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #5f9ea0;
+            color: white;
+        }
+
+        td img {
+            width: 100px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+            box-shadow: none;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: #012ef5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            display: block;
+            margin: 20px auto;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #27304d;
+        }
+
+        #mensagem-container {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 1.1em;
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Adilson Roberto Bianco</h1>
+
+    <p>
+        Tenho 37 anos, moro na cidade de Campo Largo, sou casado com a Oliana Maria Maneira Bianco e temos um filho de 4 meses chamado Mateus.
+    </p>
+
+    <button id="mostrarMensagemBtn">Clique para ver uma mensagem!</button>
+    <div id="mensagem-container"></div>
+
+    <h2>Meus Hobbies e Família</h2>
+    <ul>
+        <li>Nas horas vagas adoro tocar violão e acordeon.</li>
+        <li>A maior parte do tempo passo com minha família.</li>
+    </ul>
+
+    <img src="C:\Users\adils\Downloads\violao.jpg">
+    <img src="C:\Users\adils\Downloads\Familia.jpg" >
+
+    <h2>Países que Gostaria de Visitar</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Imagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Japão</td>
+                <td><img src="C:\Users\adils\Downloads\Japao.jpg"></td>
+            </tr>
+            <tr>
+                <td>Canadá</td>
+                <td><img src="C:\Users\adils\Downloads\Canada.jpg"></td>
+            </tr>
+            <tr>
+                <td>Itália</td>
+                <td><img src="C:\Users\adils\Downloads\Italia.jpg"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="https://www.tecmundo.com.br" target="_blank">Visite TecMundo (Site de Tecnologia)</a>
+
+    <script>
+        document.getElementById('mostrarMensagemBtn').addEventListener('click', function() {
+            document.getElementById('mensagem-container').innerText = "O sucesso é a soma de pequenos esforços repetidos dia após dia.";
+        });
+    </script>
+
+</body>
+</html>
